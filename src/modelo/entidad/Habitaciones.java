@@ -1,4 +1,5 @@
 package modelo.entidad;
+
 /**
  * Universidad Dr. Jose Matias Delgado
  * Catedra Programacion de computadoras 4
@@ -6,7 +7,7 @@ package modelo.entidad;
  *          202102186
  */
 public class Habitaciones {
-    private int idhabitaion;
+    private int idhabitacion;
     private String typehabitacion;
     private float precioxnoche;
     private String estado;
@@ -14,19 +15,19 @@ public class Habitaciones {
     public Habitaciones() {
     }
 
-    public Habitaciones(int idhabitaion, String typehabitacion, float precioxnoche, String estado) {
-        this.idhabitaion = idhabitaion;
+    public Habitaciones(int idhabitacion, String typehabitacion, float precioxnoche, String estado) {
+        this.idhabitacion = idhabitacion;
         this.typehabitacion = typehabitacion;
         this.precioxnoche = precioxnoche;
         this.estado = estado;
     }
 
-    public int getIdhabitaion() {
-        return idhabitaion;
+    public int getIdhabitacion() {
+        return idhabitacion;
     }
 
-    public void setIdhabitaion(int idhabitaion) {
-        this.idhabitaion = idhabitaion;
+    public void setIdhabitacion(int idhabitacion) {
+        this.idhabitacion = idhabitacion;
     }
 
     public String getTypehabitacion() {
@@ -55,6 +56,6 @@ public class Habitaciones {
 
     @Override
     public String toString() {
-        return this.idhabitaion + " " + this.typehabitacion + " " + this.precioxnoche + " " + this.estado + " " ;
+        return this.idhabitacion + " " + this.typehabitacion + " " + this.precioxnoche + " " + this.estado + " " ;
     }
 }

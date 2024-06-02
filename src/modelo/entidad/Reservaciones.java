@@ -1,24 +1,25 @@
 package modelo.entidad;
-import java.util.Date;
+
+import java.time.LocalDate;
 
 /**
  * Universidad Dr. Jose Matias Delgado
  * Catedra Programacion de computadoras 4
- * @author Pedro Navarrete
- *          202102186
+ * @autor Pedro Navarrete
+ *         202102186
  */
 public class Reservaciones {
     private int idreserva;
     private int idcliente;
     private int idhabitacion;
-    private Date fecha_inicio;
-    private Date fecha_fin;
+    private LocalDate fecha_inicio;
+    private LocalDate fecha_fin;
     private String estado;
 
     public Reservaciones() {
     }
 
-    public Reservaciones(int idreserva, int idcliente, int idhabitacion, Date fecha_inicio, Date fecha_fin, String estado) {
+    public Reservaciones(int idreserva, int idcliente, int idhabitacion, LocalDate fecha_inicio, LocalDate fecha_fin, String estado) {
         this.idreserva = idreserva;
         this.idcliente = idcliente;
         this.idhabitacion = idhabitacion;
@@ -51,19 +52,19 @@ public class Reservaciones {
         this.idhabitacion = idhabitacion;
     }
 
-    public Date getFecha_inicio() {
+    public LocalDate getFecha_inicio() {
         return fecha_inicio;
     }
 
-    public void setFecha_inicio(Date fecha_inicio) {
+    public void setFecha_inicio(LocalDate fecha_inicio) {
         this.fecha_inicio = fecha_inicio;
     }
 
-    public Date getFecha_fin() {
+    public LocalDate getFecha_fin() {
         return fecha_fin;
     }
 
-    public void setFecha_fin(Date fecha_fin) {
+    public void setFecha_fin(LocalDate fecha_fin) {
         this.fecha_fin = fecha_fin;
     }
 
@@ -77,8 +78,6 @@ public class Reservaciones {
 
     @Override
     public String toString() {
-        return this.idreserva + " " + this.idcliente + " " + this.idhabitacion + " " + this.fecha_inicio + " " + this.fecha_fin + " " + this.estado + " " ;
+        return this.idreserva + " " + this.idcliente + " " + this.idhabitacion + " " + this.fecha_inicio + " " + this.fecha_fin + " " + this.estado + " ";
     }
-    
-    
 }

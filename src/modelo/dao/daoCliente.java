@@ -19,7 +19,6 @@ public class daoCliente {
         this.lst = new ArrayList();
     }
 
-    
     public List<Cliente> getAll() {
         String sql = "SELECT idcliente, nombre, apellido, email FROM Cliente";
         operacionesBD op = new operacionesBD();
@@ -54,6 +53,7 @@ public class daoCliente {
     // Método para actualizar un cliente existente en la base de datos
     public int actualizarCliente(Cliente cli) {
         String sql = "UPDATE Cliente SET nombre='" + cli.getNombre() + "', apellido='" + cli.getApellido() + "', email='" + cli.getEmail() + "' WHERE idcliente=" + cli.getIdcliente();
+        System.out.println("Ejecutando SQL: " + sql);
         operacionesBD op = new operacionesBD();
         return op.ejecutar(sql);
     }
